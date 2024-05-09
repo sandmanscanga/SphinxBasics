@@ -1,6 +1,6 @@
 .. docs/index.rst
 
-.. include:: README.rst
+.. include:: docs/welcome.rst
 
 Version: |release|
 
