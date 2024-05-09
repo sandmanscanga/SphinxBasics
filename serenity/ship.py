@@ -50,7 +50,7 @@ class Firefly:
         >>> firefly.direction
         0
         >>> firefly.pilot
-        Wash
+        'Wash'
 
     """
 
