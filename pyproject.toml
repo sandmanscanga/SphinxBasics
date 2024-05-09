@@ -10,6 +10,12 @@ license = "MIT"
 
 authors = ["sandmanscanga <59103444+sandmanscanga@users.noreply.github.com>"]
 
+readme = "README.md"
+
+homepage = "https://github.com/sandmanscanga/SphinxBasics/blob/main/serenity/README.rst"
+
+repository = "https://github.com/sandmanscanga/SphinxBasics"
+
 packages = [{ include = "serenity", from = "serenity/src" }]
 
 [tool.poetry.dependencies]
