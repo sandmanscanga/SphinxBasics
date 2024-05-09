@@ -6,8 +6,8 @@ Serenity Module
 This is the pydoc code for the ``serenity`` module
 
 .. automodule:: serenity.ship
-   :members:
-   :special-members:
+    :members:
+    :special-members:
 
 .. automodule:: serenity.actions
-   :members:
+    :members:

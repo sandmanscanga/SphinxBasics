@@ -7,14 +7,22 @@ SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = .
 BUILDDIR      = _build
+PUBLISHDIR    = site
 
 # Put it first so that "make" without argument is like "make help".
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-.PHONY: help Makefile
+.PHONY: help Makefile publish
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+# New target to publish documentation
+publish: html
+	@echo "Publishing the HTML documentation to ../../$(PUBLISHDIR)..."
+	@rm -rf ../../$(PUBLISHDIR)/*  # Clean the publish directory first (optional)
+	@cp -r $(BUILDDIR)/html/* ../../$(PUBLISHDIR)
+	@echo "Documentation has been published to ../../$(PUBLISHDIR)"
