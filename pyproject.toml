@@ -2,7 +2,7 @@
 
 name = "serenity"
 
-version = "0.1.2"
+version = "0.1.3"
 
 description = "Documenting Python Projects With Sphinx and Read the Docs"
 
