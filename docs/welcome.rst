@@ -1,4 +1,4 @@
-.. README.rst
+.. docs/welcome.rst
 
 ********
 Serenity
