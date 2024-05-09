@@ -46,7 +46,16 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="movie.html">Firefly vs Serenity</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Serenity Module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Serenity Module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#serenity.ship.Firefly"><code class="docutils literal notranslate"><span class="pre">Firefly</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#serenity.ship.Firefly.__init__"><code class="docutils literal notranslate"><span class="pre">Firefly.__init__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#serenity.ship.Firefly.__weakref__"><code class="docutils literal notranslate"><span class="pre">Firefly.__weakref__</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#serenity.ship.Firefly.crazy_ivan"><code class="docutils literal notranslate"><span class="pre">Firefly.crazy_ivan()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#serenity.actions.change_pilot"><code class="docutils literal notranslate"><span class="pre">change_pilot()</span></code></a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -76,6 +85,58 @@
   <section id="serenity-module">
 <h1>Serenity Module<a class="headerlink" href="#serenity-module" title="Link to this heading"></a></h1>
 <p>This is the pydoc code for the <code class="docutils literal notranslate"><span class="pre">serenity</span></code> module</p>
+<dl class="py class" id="module-serenity.ship">
+<dt class="sig sig-object py" id="serenity.ship.Firefly">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">serenity.ship.</span></span><span class="sig-name descname"><span class="pre">Firefly</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">passengers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/serenity/ship.html#Firefly"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#serenity.ship.Firefly" title="Link to this definition"></a></dt>
+<dd><p>This class represents the ship which might be considered a main
+character.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="serenity.ship.Firefly.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">passengers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/serenity/ship.html#Firefly.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#serenity.ship.Firefly.__init__" title="Link to this definition"></a></dt>
+<dd><p>Initialize a Firefly object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>passengers</strong> – number of passengers aboard</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="serenity.ship.Firefly.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#serenity.ship.Firefly.__weakref__" title="Link to this definition"></a></dt>
+<dd><p>list of weak references to the object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="serenity.ship.Firefly.crazy_ivan">
+<span class="sig-name descname"><span class="pre">crazy_ivan</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/serenity/ship.html#Firefly.crazy_ivan"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#serenity.ship.Firefly.crazy_ivan" title="Link to this definition"></a></dt>
+<dd><p>Changes direction by 180 degrees.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>new direction</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-serenity.actions">Actions that can be performed with Firefly and its crew.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="serenity.actions.change_pilot">
+<span class="sig-prename descclassname"><span class="pre">serenity.actions.</span></span><span class="sig-name descname"><span class="pre">change_pilot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">firefly</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pilot</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/serenity/actions.html#change_pilot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#serenity.actions.change_pilot" title="Link to this definition"></a></dt>
+<dd><p>Changes the pilot on a <a class="reference internal" href="#serenity.ship.Firefly" title="serenity.ship.Firefly"><code class="xref py py-class docutils literal notranslate"><span class="pre">serenity.ship.Firefly</span></code></a> instance to the
+given value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>firefly</strong> – <a class="reference internal" href="#serenity.ship.Firefly" title="serenity.ship.Firefly"><code class="xref py py-class docutils literal notranslate"><span class="pre">Firefly</span></code></a> instance who’s
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">pilot</span></code> attribute is to be changed</p></li>
+<li><p><strong>pilot</strong> – String with the new pilot’s name</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 
 

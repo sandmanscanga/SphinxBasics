@@ -10,6 +10,8 @@ license = "MIT"
 
 authors = ["sandmanscanga <59103444+sandmanscanga@users.noreply.github.com>"]
 
+packages = [{ include = "serenity", from = "serenity/src" }]
+
 [tool.poetry.dependencies]
 python = "^3.11"
 
