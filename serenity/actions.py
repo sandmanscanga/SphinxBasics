@@ -9,15 +9,16 @@ Summary:
 
 Functions:
     change_pilot: Changes the pilot on a Firefly instance to the
-        given value.
+    given value.
 
 Example:
     The following example demonstrates how to use the functions in
     this module:
 
-    >>> import serenity
-    >>> firefly = serenity.ship.Firefly()
-    >>> serenity.actions.change_pilot(firefly, "Malcolm Reynolds")
+    >>> from serenity.ship import Firefly
+    >>> from serenity.actions import change_pilot
+    >>> firefly = Firefly()
+    >>> change_pilot(firefly, "Malcolm Reynolds")
     >>> print(firefly.pilot)
     Malcolm Reynolds
 
@@ -39,15 +40,16 @@ def change_pilot(firefly: Firefly, pilot: str) -> None:
 
     Args:
         firefly (Firefly): The Firefly instance who's pilot
-            attribute is to be changed.
+        attribute is to be changed.
         pilot (str): The new pilot's name.
 
     Example:
         The following example demonstrates how to use the function:
 
-        >>> import serenity
-        >>> firefly = serenity.ship.Firefly()
-        >>> serenity.actions.change_pilot(firefly, "Malcolm Reynolds")
+        >>> from serenity.ship import Firefly
+        >>> from serenity.actions import change_pilot
+        >>> firefly = Firefly()
+        >>> change_pilot(firefly, "Malcolm Reynolds")
         >>> print(firefly.pilot)
         Malcolm Reynolds
 

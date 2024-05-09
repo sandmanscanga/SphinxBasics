@@ -9,7 +9,7 @@ Summary:
 
 Functions:
     change_pilot: Changes the pilot on a Firefly instance to the
-        given value.
+    given value.
 
 Example:
     The following example demonstrates how to use the functions in
@@ -36,14 +36,15 @@ class Firefly:
         Ivan" maneuver to change direction by 180 degrees.
 
     Attributes:
-        passengers (int): Number of passengers aboard direction
-        (int): Direction the ship is facing in degrees pilot (str):
-        Name of the pilot
+        passengers (int): Number of passengers aboard
+        direction (int): Direction the ship is facing in degrees
+        pilot (str): Name of the pilot
 
     Example:
         The following example demonstrates how to use the class:
 
-        >>> firefly = serenity.ship.Firefly()
+        >>> from serenity.ship import Firefly
+        >>> firefly = Firefly()
         >>> firefly.passengers
         3
         >>> firefly.direction
@@ -87,7 +88,8 @@ class Firefly:
         Example:
             The following example demonstrates how to use the method:
 
-            >>> firefly = serenity.ship.Firefly()
+            >>> from serenity.ship import Firefly
+            >>> firefly = Firefly()
             >>> firefly.crazy_ivan()
             180
 

@@ -13,13 +13,6 @@ Summary:
 Attributes:
     __version__ (str): The version of the package.
 
-Example:
-    The following example demonstrates how to use the package:
-
-    >>> import serenity
-    >>> print(serenity.hello_world())
-    Hello, World!
-
 """
 
 __version__ = "0.1.0"
